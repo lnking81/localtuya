@@ -3,3 +3,7 @@ __pycache__
 .tox
 tuyadebug/
 .pre-commit-config.yaml
+.vscode/
+.venv/
+Pipfile
+Pipfile.lock

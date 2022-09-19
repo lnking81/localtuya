@@ -377,6 +377,7 @@ class LocaltuyaConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         await self.async_set_unique_id(user_input.get(CONF_USER_ID))
         user_input[CONF_DEVICES] = {}
 
+        _LOGGER.warning("Creating entry %s", user_input)
         return self.async_create_entry(
             title=user_input.get(CONF_USERNAME),
             data=user_input,
